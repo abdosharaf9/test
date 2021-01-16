@@ -1,0 +1,182 @@
+﻿<!--Web sheet written by Abdo Sharaf-->
+<html>
+<head>
+    <title>web sheet</title>
+
+    <!--JavaScript-->
+
+    <script>
+        var x = prompt("What is your grade ?");
+        switch (x) {
+
+            case "100": case "99": case "98": case "97": case "96": case "95": case "94": case "93": case "92": case "91": 
+                alert("Your grade is A+");
+                break;
+            case "90": case "89": case "88": case "87": case "86": case "85": case "84": case "83": case "82": case "81":
+                alert("Your grade is A");
+                break;
+            case "80": case "79": case "78": case "77": case "76": case "75": case "74": case "73": case "72": case "71":
+                alert("Your grade is B");
+                break;
+            case "70": case "69": case "68": case "67": case "66": case "65": case "64": case "63": case "62": case "61":
+                alert("Your grade is C");
+                break;
+            case "60": case "59": case "58": case "57": case "56": case "55": case "54": case "53": case "52": case "51":
+                alert("Your grade is D");
+                break;
+            default:
+                alert("You are fail !");
+                break;
+        }
+    </script>
+
+    <!--CSS-->
+
+    <style>
+        body {
+            font-family: sans-serif;
+            background-image: url(https://cdn.wallpapersafari.com/20/74/x58BEZ.jpg);
+        }
+
+        .signup {
+            border-radius: 10px;
+            border: solid white 3px;
+            margin-left: 40%;
+            text-align: center;
+            width: 400px;
+            height: 550px;
+            background: #212191;
+            padding-top: 40px;
+            font-size: x-large;
+            color: white;
+        }
+
+        img {
+            width: 720px;
+            height: 480px;
+            border-radius: 15px 90px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1 {
+            background-color: midnightblue;
+            font-family: 'Bell MT';
+            font-size: 80px;
+            color: white;
+            text-align: center;
+            border: solid 5px green;
+            border-radius: 10px;
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+
+        p, h2 {
+            font-size: 20px;
+            color: white;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        a {
+            color: white;
+        }
+
+        input {
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+        }
+
+            input[type=submit], input[type=reset] {
+                background-color: #4CAF50;
+                border: none;
+                border-radius: 15px;
+                color: white;
+                width: 100px;
+                height: 40px;
+                padding: 10px 20px;
+                margin: 4px 15px;
+            }
+
+    </style>
+
+    
+</head>
+<body>
+
+    <!--HTML-->
+
+    <h1>first web sheet</h1>
+    <br />
+
+    <p>
+        <b>HTML</b> is the main markup language of the web. It natively in every browser and is maintained by the World Wide Web consortium.
+        HTML stands for Hypertext Markup Language, and it is the most widely used language to write web pages.
+    </p>
+    <br />
+
+    <img src="https://blog.udacity.com/wp-content/uploads/2020/06/HTML_Blog-scaled.jpeg" alt="html photo" />
+    <br />
+
+    <p>You can learn more about it from here :<a href="https://www.w3schools.com/html/default.asp">W3schools</a></p>
+    <hr />
+
+    <h2>You can register here to get more about programming :</h2>
+    <br />
+
+    <div class="signup">
+        <form>
+            <label for="fname">First name : </label>
+            <input type="text" maxlength="20" required />
+            <br /><br />
+
+            <label for="lname">Last name : </label>
+            <input type="text" maxlength="20" required />
+            <br /><br />
+
+            <label for="password">Password : </label>
+            <input type="password" maxlength="20" required />
+            <br /><br />
+
+            <label for="proglang">Select Sprogramming language : </label><br /><br />
+            <input list="programming languages" required>
+            <datalist id="programming languages">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+                <option value="PHP">
+                <option value="Python">
+                <option value="C++">
+                <option value="C#">
+                <option value="Java">
+                <option value="SQL">
+            </datalist>
+            <br /><br />
+
+            <label for="email">Your E-mail : </label>
+            <input type="email" required />
+            <br /><br />
+
+            <label for="gender">Select your gender : </label>
+            <br /><br />
+            <input type="radio" id="male" value="male" name="gender" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" value="female" name="gender" />
+            <label for="female">Female</label>
+            <input type="radio" id="other" value="other" name="gender" />
+            <label for="other">Other</label>
+            <br /><br />
+
+            <input type="submit" value="Register" />
+            <input type="reset" value="Reset" />
+        </form>
+    </div>
+    <br /><hr /><br />
+
+    <h2>Thanks for your visit ♥</h2>
+
+</body>
+</html>
